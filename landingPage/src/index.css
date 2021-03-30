@@ -9,47 +9,24 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Animated header background */
-@-webkit-keyframes scrollBad {
-  0% {
-    background-position: 0 0;
-  }
+
+@keyframes scrollBad{
   100% {
-    background-position: 0 -320px;
+    background-position:0px -3000px;
   }
 }
-@keyframes scrollBad {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 -320px;
-  }
-}
-@-webkit-keyframes scrollGood {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, -320px, 0);
-  }
-}
-@keyframes scrollGood {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, -320px, 0);
-  }
-}
+
 
 
 .animatedBackground {
-  -webkit-animation: scrollBad 5s linear infinite;
-  animation: scrollBad 5s linear infinite;
+  -webkit-animation: scrollBad 100s linear infinite;
+  animation: scrollBad 100s linear infinite;
 }
 
 
+.bg-hero-pattern {
+  background-size: 2050px;  
+}
 
 
 
@@ -96,6 +73,51 @@ html {
 }
 
 /* LOGO CONTACT ME */
+.logosContactMe {
+  margin-top: 40vw !important;
+  margin-bottom: 10vw;
+	align-items: center;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+@media (min-width: 768px) {
+  .logosContactMe {
+    margin-top: 20vw !important;
+  }
+
+  .logo b {
+    position: relative !important;
+    left: 5vw !important;
+    top: 13.5vw !important;
+    font: 400 3.5vw "Vibur" !important;
+  }
+  .logo b span {
+    margin-right: 15px;
+  }
+
+}
+
+.logo b {
+  position: relative;
+  left: 10vw;
+  top: 30vw;
+  font: 400 5vw "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+    0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span {
+  animation: blink linear infinite 2s;
+  margin-right: 15px;
+}
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
+
 .logo {
   text-align: center;
 
@@ -108,24 +130,10 @@ html {
   right: 0;
   bottom: 0;
   user-select: none;
+  max-width: 800px;
 }
 
-.logo b {
-  position: relative;
-  left: 5vw;
-  top: 13.5vw;
-  font: 400 3.5vw "Vibur";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
-    0 0 0.1em #ff4444, 0 10px 3px #000;
-}
-.logo b span {
-  animation: blink linear infinite 2s;
-  margin-right: 15px;
-}
-.logo b span:nth-of-type(2) {
-  animation: blink linear infinite 3s;
-}
+
 @keyframes blink {
   78% {
     color: inherit;
@@ -163,8 +171,28 @@ html {
 
 
 
-
-
+/* Youtube video container */
+@media only screen and (max-width: 768px) {
+  .youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 
 
@@ -208,32 +236,13 @@ html {
 }
 
 
-/* .popup { 
-   margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 3px;
-  width: max-content; 
-  position: relative;
-  transition: all 5s ease-in-out;
-}  */
-
-/* .popup .close {
-  position: absolute;
-  top: -20px;
-  right: 0px;
-  transition: all 200ms;
-  font-size: 60px;
-  font-weight: bold;
-  text-decoration: none;
-   color: green; 
-} */
-/* .popup .close:hover {
-  color: #06D85F;
-} */
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+#popupVideo {
+  top: 20%;
 }
 
 @media screen and (max-width: 700px){
@@ -241,6 +250,98 @@ html {
     width: 70%;
   }
   .popup{
-    width: 70%;
+    width: 80%;
   }
+}
+
+
+
+
+
+
+/* SOCIAL MEDIA ICONS */
+.clip {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.svg--source {
+  display: none;
+}
+
+.logosContactMe {
+  margin-top: 25vw;
+  align-items: center;
+}
+
+.svg--icon {
+  width: 100%;
+  max-width: 2rem;
+  height: 100%;
+  max-height: 2rem;
+  display: block;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+.svg--icon-smaller {
+  width: 60%;
+}
+
+.share {
+  float: left;
+  margin: 0.5rem 1rem 0.5rem 0;
+  color: #828282;
+  border: 0.125rem solid #828282;
+  border-radius: 10%;
+  transition: 250ms;
+}
+.share:last-child {
+  margin-right: 0;
+}
+.share:hover, .share:focus {
+  background: #f1f1f1;
+  border-color: #333;
+  border-radius: 15%;
+}
+.share:focus {
+  outline-color: inherit;
+}
+
+.twitter:hover, .twitter:focus {
+  color: #00ACED;
+}
+
+.github:hover, .github:focus {
+  color: #4183c4;
+}
+
+.youtube:hover, .youtube:focus {
+  color: #cd201f;
+}
+
+.facebook:hover, .facebook:focus {
+  color: #3b5998;
+}
+
+.stackoverflow:hover .svg--icon-st, .stackoverflow:focus .svg--icon-st {
+  fill: #F68A1F;
+}
+
+.linkedin:hover, .linkedin:focus {
+  color: #1d87be;
+}
+
+#svg--codepen {
+  stroke: #828282;
+}
+
+.rss:hover, .rss:focus {
+  color: #D95B29;
 }

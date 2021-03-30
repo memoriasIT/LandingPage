@@ -19,6 +19,7 @@
     <!-- <div id="app"></div>  -->
     <script type="module" src="/main.js"></script>
 
+    <!-- Hero Intro -->
     <div class="bg-hero-pattern animatedBackground">
       <div class="px-2 py-4 lg:mx-4 xl:mx-12">
         <div class="">
@@ -78,13 +79,13 @@
       </div>
 
       <div class="flex h-screen from-black bg-gradient-to-t">
-        <div class="m-auto">
+        <div class="m-auto mt-24 md:mt-24 herologoimage">
           <img
-            class="self-center w-auto h-64 sm:h-32 md:h-64"
+            class="self-center w-3/4 h-auto m-auto sm:w-32 md:w-96"
             src="src/img/logo.png"
           />
           <h2
-            class="flex flex-col items-center content-center mt-3 text-base text-white sm:mt-5 sm:text-3xl sm:max-w-xl sm:mx-auto md:mt-5 md:text-4xl lg:mx-0"
+            class="flex flex-col items-center content-center mt-3 text-3xl font-bold text-white sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0 md:text-5xl text"
           >
             <span class="self-center">Code tells stories,</span>
             <span>let me tell you mine...</span>
@@ -96,29 +97,22 @@
 
     <!-- WHOAMI -->
     <div data-aos="fade-up" class="w-full text-center" id="whoami">
-      <h1 class="text-5xl font-bold text-white text">whoami</h1>
-      <h3 class="mt-8 text-lg text-white">
-        This is me, I am a Software Engineer with an interest in security.
-        <br />
-        I make free videos on YouTube to educate the public.
-      </h3>
-
-  
-
-<a href="javascript:void callPlayer(&quot;videoID&quot;,&quot;playVideo&quot;)">Start</a> &bull; <a href="javascript:void callPlayer(&quot;videoID&quot;,&quot;pauseVideo&quot;)">Pause</a> &bull; <a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;stopVideo&quot;)">Stop</a> - Hover over the links to see the called function
-<br />
-
-
-
+      <div class="flex flex-col items-center ">
+        <h1 class="text-3xl font-bold text-white md:text-5xl text">whoami</h1>
+        <h3 class="w-4/5 mt-8 text-lg text-white md:w-2/6">
+          This is me, I am a Software Engineer with an interest in security. I make free videos on YouTube to educate the public.
+        </h3>
+      </div>
+      
       <div class="mt-16 ...">  
               <!-- POPUP VIDEO - STARTS HIDDEN  -->
         <div id="popupVideo" class="z-50 overlay">
           <!-- Container -->
           <div class="relative p-2 mx-auto my-12 ease-in bg-white rounded-md popup w-max">
             <!-- Close Button -->
-            <a class="absolute right-0 text-6xl font-bold text-green-600 hover:text-green-400 focus:text-green-400 -top-6 close" id="closePopUp" href="javascript:void callPlayer(&quot;videoID&quot;,&quot;pauseVideo&quot;)">&times;</a>
+            <a class="absolute right-0 z-50 text-6xl font-bold text-green-600 hover:text-green-400 focus:text-green-400 -top-6 close" id="closePopUp" href="javascript:void callPlayer(&quot;videoID&quot;,&quot;pauseVideo&quot;)">&times;</a>
             <div class="content">
-              <div id="videoID"><iframe width="640" height="390" frameborder="0" title="YouTube video player" type="text/html" src="http://www.youtube.com/embed/w9hSC-qh0SU?enablejsapi=1"></iframe></div>
+              <div id="videoID"><iframe frameborder="0" title="YouTube video player" type="text/html" src="http://www.youtube.com/embed/w9hSC-qh0SU?enablejsapi=1"></iframe></div>
             </div>
           </div>
         </div>
@@ -135,89 +129,23 @@
     </div>
 
     <!-- Technologies & frameworks -->
-    <div data-aos="fade-up" class="w-full mt-24 text-center">
-      <h1 class="text-5xl font-bold text-white text">
+    <div data-aos="fade-up" class="flex flex-col items-center w-full mt-24 text-center">
+      <h1 class="w-1/2 text-3xl font-bold text-white md:text-5xl text">
         Technologies & Frameworks
       </h1>
-      <h3 class="mt-8 text-lg text-white">
-        My favorite set of frameworks and technologies. I am always open to
-        <br />
-        new alternatives, these are only my preferences.
+      <h3 class="w-4/5 mt-8 text-lg text-white md:w-2/6">
+        My favorite set of frameworks and technologies. I am always open to new alternatives, these are only my preferences.
       </h3>
 
       <!-- ICONS -->
       <div class="grid grid-cols-6 gap-4">
-        <div class="flex flex-row justify-between col-span-4 col-start-2 mt-8">
-          <svg
-            class="h-28"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <svg
-            class="h-28"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <svg
-            class="h-28"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <svg
-            class="h-28"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <svg
-            class="h-28"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
+        <div class="flex flex-row justify-between col-span-4 col-start-2 mt-8 space-x-16">
+          <img src="src/img/python.svg" alt="python" srcset="">
+          <img src="src/img/java.svg" alt="java" srcset="">
+          <img src="src/img/nodejs.svg" alt="nodejs" srcset="">
+          <img src="src/img/c++.svg" alt="c++" srcset="">
+          <img src="src/img/android-os.svg" alt="android" srcset="">
+          
         </div>
       </div>
 
@@ -232,133 +160,93 @@
     </div>
 
     <!-- PROJECTS -->
-    <div data-aos="fade-up" class="w-full mt-24 text-center">
-      <h1 class="text-5xl font-bold text-white text">Projects</h1>
-      <h3 class="mt-8 text-lg text-white">
+    <div data-aos="fade-up" class="flex flex-col items-center w-full mt-24 text-center ">
+      <h1 class="w-1/2 text-3xl font-bold text-white md:text-5xl text">Projects</h1>
+      <h3 class="w-4/5 mt-8 text-lg text-white md:w-2/6">
         Some of my most recents projects. <br />
         You can find more of my open source projects in my github profile.
       </h3>
 
-      <div
-        class="grid content-center justify-between w-10/12 mx-auto mt-16 text-left gap-x-7 holder sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"
-      >
-        <!-- Card 1 -->
-        <div data-aos="flip-left"
-          class="relative m-2 mb-10 bg-gray-100 border-gray-800 rounded shadow-lg each"
-        >
-          <img
-            class="w-full rounded-t-lg"
-            src="https://i.ytimg.com/vi/qew27BNl7io/maxresdefault.jpg"
-            alt=""
-          />
-          <div class="p-4 text-gray-800 desc">
-            <a
-              href="https://www.youtube.com/watch?v=dvqT-E74Qlo"
-              target="_new"
-              class="block font-bold cursor-pointer title"
-              >Pubg Mobile Custom Room (Unlimited)</a
-            >
-            <span
-              class="px-1 text-xs font-bold text-white bg-green-500 rounded cursor-pointer badge"
-              >Flutter</span
-            >
-            <span
-              class="px-1 text-xs font-bold text-white bg-green-500 rounded cursor-pointer badge"
-              >Javascript</span
-            >
-
-            <span class="block py-2 mb-2 text-sm border-gray-400 description"
-              >lorem ipsum bekhum bukhum !lorem ipsum bekhum bukhum !</span
-            >
-            <div class="flex items-end justify-end w-full place-items-end">
-              <a
-                href=""
-                class="self-end px-4 py-3 mr-6 font-bold text-center text-white transition duration-300 ease-in-out bg-green-500 rounded-lg hover:bg-green-600"
-              >
-                Go to project
-              </a>
+      <div class="w-4/5 mt-8">
+        <div class="flex flex-col px-6 pt-4 ml-2 lg:grid lg:gap-4 2xl:gap-6 lg:grid-cols-4 2xl:row-span-2 2xl:pb-8">
+          <!-- Beginning of the component about Daniel Clifford -->
+          <div class="mb-5 bg-indigo-600 rounded-lg shadow-xl lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 lg:mb-0">
+            <div class="mx-6 my-8 2xl:mx-10">
+              <img class="w-8 h-8 ml-1 border-2 rounded-full md:w-9 lg:w-10 2xl:w-20 md:h-9 lg:h-10 2xl:h-20 lg:ml-3 2xl:ml-0 md:-mt-1 2xl:-mt-4" src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+              <h1 class="pl-12 -mt-8 text-xs text-white md:text-base 2xl:text-xl lg:pl-16 2xl:pl-20 md:-mt-10 lg:-mt-11 2xl:-mt-20 2xl:mx-8">Daniel Clifford</h1>
+              <h2 class="pl-12 text-xs text-white text-opacity-50 md:text-base 2xl:text-xl lg:pl-16 2xl:pl-20 2xl:my-2 2xl:mx-8">Verified Graduate</h2>
+            </div>
+            <div class="relative -mt-6">
+              <p class="text-xl font-bold text-white 2xl:text-xl px-7 lg:px-9 2xl:pt-6 2xl:mx-2">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</p>
+              <br />
+              <p class="mb-3 font-medium text-white text-opacity-50 md:text-sm 2xl:text-xl px-7 lg:px-9 2xl:pb-8 2xl:mx-2">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
             </div>
           </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div data-aos="flip-left" data-aos-delay="150"
-          class="relative m-2 mb-10 bg-gray-100 border-gray-800 rounded shadow-lg each"
-        >
-          <img
-            class="w-full rounded-t-lg"
-            src="https://i.ytimg.com/vi/qew27BNl7io/maxresdefault.jpg"
-            alt=""
-          />
-          <div class="p-4 text-gray-800 desc">
-            <a
-              href="https://www.youtube.com/watch?v=dvqT-E74Qlo"
-              target="_new"
-              class="block font-bold cursor-pointer title"
-              >Pubg Mobile Custom Room (Unlimited)</a
-            >
-            <span
-              class="px-1 text-xs font-bold text-white bg-green-500 rounded cursor-pointer badge"
-              >Flutter</span
-            >
-            <span
-              class="px-1 text-xs font-bold text-white bg-green-500 rounded cursor-pointer badge"
-              >Javascript</span
-            >
-
-            <span class="block py-2 mb-2 text-sm border-gray-400 description"
-              >lorem ipsum bekhum bukhum !lorem ipsum bekhum bukhum !</span
-            >
-            <div class="flex items-end justify-end w-full place-items-end">
-              <a
-                href=""
-                class="self-end px-4 py-3 mr-6 font-bold text-center text-white transition duration-300 ease-in-out bg-green-500 rounded-lg hover:bg-green-600"
-              >
-                Go to project
-              </a>
+          <!-- Ending of the component about Daniel Clifford -->
+  
+          <!-- Beginning of the component about Jonathan Walters -->
+          <div class="pb-4 mb-5 bg-gray-900 rounded-lg shadow-xl lg:order-2 lg:row-span-1 2xl:row-span-1 lg:col-span-1 lg:mb-0">
+            <div class="mx-8 my-10 2xl:mx-10">
+              <img class="w-8 h-8 -mt-2 -ml-1 border-2 rounded-full md:w-9 2xl:w-20 md:h-9 2xl:h-20 lg:-mt-4" src="https://images.pexels.com/photos/634021/pexels-photo-634021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+              <h1 class="-mt-8 text-xs text-white md:text-base 2xl:text-xl pl-11 md:pl-12 2xl:pl-24 md:-mt-10 2xl:-mt-16">Jonathan Walters</h1>
+              <h2 class="text-xs text-white text-opacity-50 md:text-base 2xl:text-xl pl-11 md:pl-12 2xl:pl-24">Verified Graduate</h2>
+            </div>
+            <div class="mx-1 -mt-8 lg:mx-2">
+              <p class="px-6 pt-1 text-lg font-semibold text-white lg:text-xl 2xl:text-xl 2xl:px-8 lg:pl-5 lg:pr-8">The team was very supportive and kept me motivated</p>
+              <br />
+              <p class="pl-6 pr-4 -mt-1 font-medium text-white text-opacity-50 md:text-sm 2xl:text-xl lg:pl-5 lg:mt-6 2xl:mt-2 2xl:px-8">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
             </div>
           </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div data-aos="flip-left" data-aos-delay="300"
-          class="relative m-2 mb-10 bg-gray-100 border-gray-800 rounded shadow-lg each"
-        >
-          <img
-            class="w-full rounded-t-lg"
-            src="https://i.ytimg.com/vi/qew27BNl7io/maxresdefault.jpg"
-            alt=""
-          />
-          <div class="p-4 text-gray-800 desc">
-            <a
-              href="https://www.youtube.com/watch?v=dvqT-E74Qlo"
-              target="_new"
-              class="block font-bold cursor-pointer title"
-              >Pubg Mobile Custom Room (Unlimited)</a
-            >
-            <span
-              class="px-1 text-xs font-bold text-white bg-green-500 rounded cursor-pointer badge"
-              >Flutter</span
-            >
-            <span
-              class="px-1 text-xs font-bold text-white bg-green-500 rounded cursor-pointer badge"
-              >Javascript</span
-            >
-
-            <span class="block py-2 mb-2 text-sm border-gray-400 description"
-              >lorem ipsum bekhum bukhum !lorem ipsum bekhum bukhum !</span
-            >
-            <div class="flex items-end justify-end w-full place-items-end">
-              <a
-                href=""
-                class="self-end px-4 py-3 mr-6 font-bold text-center text-white transition duration-300 ease-in-out bg-green-500 rounded-lg hover:bg-green-600"
-              >
-                Go to project
-              </a>
+          <!-- Ending of the component about Jonathan Walters -->
+  
+          <!-- Beginning of the component about Jeanette Harmon -->
+          <div class="mb-5 bg-white rounded-lg shadow-xl lg:order-3 lg:row-span-2 2xl:row-span-1 lg:col-span-1 lg:mb-0 2xl:mb-8">
+            <div class="mx-8 my-10 lg:my-8">
+              <img class="w-8 h-8 -mt-3 -ml-1 border-2 rounded-full md:w-9 lg:w-11 2xl:w-20 md:h-9 lg:h-11 2xl:h-20 lg:-ml-0" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+              <h1 class="-mt-8 text-xs primary-color-blackish-blue md:text-base 2xl:text-xl pl-11 md:pl-12 lg:pl-14 2xl:pl-24 md:-mt-10 lg:-mt-11 2xl:-mt-16">Jeanette Harmon</h1>
+              <h2 class="text-xs primary-color-blackish-blue-opacity md:text-base 2xl:text-xl pl-11 md:pl-12 lg:pl-14 2xl:pl-24">Verified Graduate</h2>
+            </div>
+            <div class="ml-5 -mt-4 mr-11">
+              <p class="px-2 -mt-6 text-xl font-bold primary-color-blackish-blue 2xl:text-xl lg:px-3 lg:-mt-5 2xl:mt-12 2xl:pb-6">An overall wonderful and rewarding experience</p>
+              <br />
+              <p class="pl-2 mb-6 -mt-3 font-medium primary-color-blackish-blue-opacity md:text-sm 2xl:text-xl lg:pl-3 lg:pr-4 2xl:pt-2">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
             </div>
           </div>
+          <!-- Ending of the component about Jeanette Harmon -->
+  
+          <!-- Beginning of the component about Patrick Abrams -->
+          <div class="col-span-2 mb-5 bg-purple-800 rounded-lg shadow-xl lg:order-4 lg:row-span-2 2xl:row-span-1 lg:mb-0 2xl:mb-8 lg:pb-14 2xl:pb-20">
+            <div class="mx-8 my-8">
+              <img class="w-8 h-8 border-2 rounded-full md:w-9 lg:w-10 2xl:w-20 md:h-9 lg:h-10 2xl:h-20 lg:-mt-3" src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+              <h1 class="pl-12 -mt-8 text-xs text-white md:text-base 2xl:text-xl md:pl-14 2xl:pl-24 md:-mt-10 lg:-mt-11 2xl:-mt-16">Patrick Abrams</h1>
+              <h2 class="pl-12 text-xs text-white text-opacity-50 md:text-base 2xl:text-xl md:pl-14 2xl:pl-24">Verified Graduate</h2>
+            </div>
+            <div class="px-3 mb-5 -mt-3 lg:mb-0">
+              <p class="px-4 -mt-3 text-lg font-semibold text-white 2xl:text-xl lg:-mt-6 2xl:mt-8">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</p>
+              <br />
+              <p class="px-4 mt-1 font-medium text-white text-opacity-50 md:text-sm 2xl:text-xl lg:-mt-3 2xl:mt-6">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of lgart and amazing people. ”</p>
+            </div>
+          </div>
+          <!-- Ending of the component about Patrick Abrams -->
+  
+          <!-- Beginning of the component about Kira Whittle -->
+          <div class="mb-5 bg-white rounded-lg shadow-xl lg:order-2 lg:row-span-4 lg:col-span-1 lg:pb-4 2xl:h-screen">
+            <div class="mx-8 my-8 lg:pl-1">
+              <img class="w-8 h-8 -ml-1 border-2 rounded-full md:w-9 lg:w-12 2xl:w-20 md:h-9 lg:h-12 2xl:h-20 lg:-mt-4 lg:-ml-4" src="https://images.pexels.com/photos/3762804/pexels-photo-3762804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+              <h1 class="pl-10 -mt-8 text-xs primary-color-blackish-blue md:text-base 2xl:text-xl md:pl-12 2xl:pl-24 md:-mt-10 lg:-mt-12 2xl:-mt-16">Kira Whittle</h1>
+              <h2 class="pl-10 text-xs primary-color-blackish-blue-opacity md:text-base 2xl:text-xl md:pl-12 2xl:pl-24">Verified Graduate</h2>
+            </div>
+            <div class="px-3 mb-5 lg:px-5 lg:-mt-4 lg:mb-0">
+              <p class="px-4 -mt-2 text-xl font-semibold primary-color-blackish-blue 2xl:text-xl lg:px-0 lg:-mt-0">Such a life-changing experience. Highly recommended!</p>
+              <br />
+              <p class="px-4 mt-2 font-medium primary-color-blackish-blue-opacity md:text-sm 2xl:text-xl lg:px-0 2xl:px-4 lg:pr-3 lg:-mt-1 2xl:mt-2 2xl:pb-64">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+            </div>
+          </div>
+          <!-- Ending of the component about Kira Whittle -->
         </div>
       </div>
+
+      
     </div>
 
     <!-- CONTACT -->
@@ -367,10 +255,10 @@
         <div class="flex flex-col">
           <div
             style="overflow: hidden"
-            class="flex flex-row justify-between mb-5 text-white"
+            class="flex flex-col justify-between mt-4 mb-5 text-white md:flex-row"
           >
             <div
-              class="flex flex-col float-left w-3/6 px-2 text-center"
+              class="flex flex-col float-left w-full px-2 text-center md:w-3/6"
               style="float: left"
             >
               <div class="logo">
@@ -388,16 +276,87 @@
                   ><span>Contact</span><span>Me</span></b
                 >
               </div>
+
+              <svg class="svg--source" width="0" height="0" aria-hidden="true">
+
+                <!-- Twitter -->
+                <symbol id="svg--twitter" viewbox="0 -7 15 30">
+                  <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z" />
+                </symbol>
+              
+                <!-- Facebook -->
+                <symbol id="svg--facebook" viewbox="0 -7 16 30">
+                  <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+                </symbol>
+              
+                <!-- github -->
+                <symbol id="svg--github" viewbox="-30 -30 150 150">
+                  <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
+                           c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
+                           c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
+                           c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
+                           c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
+                           C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
+                           c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
+                           c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
+                           C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
+                           c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
+                </symbol>
+              
+              
+                <!-- youtube -->
+                <symbol id="svg--youtube" viewbox="-150 -150 800 800">
+                  <path d="M459,61.2C443.7,56.1,349.35,51,255,51c-94.35,0-188.7,5.1-204,10.2C10.2,73.95,0,163.2,0,255s10.2,181.05,51,193.8
+                           C66.3,453.9,160.65,459,255,459c94.35,0,188.7-5.1,204-10.2c40.8-12.75,51-102,51-193.8S499.8,73.95,459,61.2z M204,369.75v-229.5
+                           L357,255L204,369.75z" />
+                </symbol>
+              </svg>
+              
+              
+              
+              <div class="z-40 logosContactMe">
+                <div>
+                  <a href="" class="share twitter">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--twitter" />
+                    </svg>
+                    <span class="clip">TWITTER</span>
+                  </a>
+                
+                  <a href="" class="share facebook">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--facebook" />
+                      <span class="clip">FACEBOOK</span>
+                    </svg>
+                  </a>
+                
+                  <a href="" class="share github">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--github" />
+                      <span class="clip">GITHUB</span>
+                    </svg>
+                  </a>
+                
+                  <a href="" class="share youtube">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--youtube" />
+                      <span class="clip">YOUTUBE</span>
+                    </svg>
+                  </a>
+                
+                
+                </div>
+              </div>
             </div>
 
             <!-- FORM - RIGHT COLUMN -->
             <div
-              data-aos="zoom-in-up" data-aos-delay="400"
+              data-aos="zoom-in-up" data-aos-delay="400" data-aos-offset="-200"
               id="contact"
-              class="flex flex-col items-center w-3/6 px-2"
+              class="flex flex-col items-center w-full px-2 md:w-3/6"
               style="float: left"
             >
-              <div class="w-full max-w-md p-6 bg-gray-800 rounded-md shadow">
+              <div class="w-full max-w-md p-6 mb-16 bg-gray-800 rounded-md shadow">
                 <h3 class="text-3xl font-bold text-center text-white">
                   Contact me
                 </h3>
@@ -417,12 +376,13 @@
                     <input
                       type="email"
                       id="email"
+                      placeholder="Your e-mail"
                       name="email"
                       class="block w-full mt-1 text-white bg-gray-800 border-gray-700 rounded-md form-input"
                       value=""
                       required=""
                       autocomplete="email"
-                      autofocus=""
+                      
                     />
                   </label>
 
@@ -432,11 +392,12 @@
                       type="text"
                       id="name"
                       name="name"
+                      placeholder="Your Name"
                       class="block w-full mt-1 text-white bg-gray-800 border-gray-700 rounded-md form-input focus:border-green-600"
                       value=""
                       required=""
                       autocomplete="name"
-                      autofocus=""
+                      
                     />
                   </label>
 
@@ -615,5 +576,16 @@
     <script>
       AOS.init();
     </script>
+
+
+
+
+
+
+
+
+
+
+
   </footer>
 </html>
