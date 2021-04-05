@@ -169,7 +169,8 @@ html {
 
 
 
-
+.youtube-video-container {
+}
 
 /* Youtube video container */
 @media only screen and (max-width: 768px) {
@@ -245,7 +246,16 @@ html {
   top: 20%;
 }
 
-@media screen and (max-width: 700px){
+.iframeVideoYoutube {
+  width: 70vw;
+  height: calc(0.63*70vw);
+  max-width: 780px;
+  max-height: calc(0.63*780px);
+}
+
+
+
+@media screen and (max-width: 768px){
   .box{
     width: 70%;
   }
@@ -344,4 +354,22 @@ html {
 
 .rss:hover, .rss:focus {
   color: #D95B29;
+}
+
+
+
+
+
+.cardHorizontal {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+
+@media (min-width: 600px) {
+  .cardHorizontal {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
