@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="src/index.css" />
     
 
 
     <!-- Animate on scroll -->
-    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
   
     <title>MemoriasIT</title>
@@ -17,7 +17,7 @@
   <body class="bg-black">
     <!-- Used to inject from main.js (NOT USED AT THE MOMENT) -->
     <!-- <div id="app"></div>  -->
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="/main.js"></script>
 
     <!-- Hero Intro -->
     <div class="bg-hero-pattern animatedBackground">
@@ -25,7 +25,7 @@
         <div class="">
           <nav class="flex flex-wrap items-center justify-between">
             <div class="flex items-center mr-6 text-white flex-no-shrink">
-              <img src="./src/img/logo.png" alt="" class="h-12 mr-2 xl:h-20" />
+              <img src="src/img/logo.png" alt="" class="h-12 mr-2 xl:h-20" />
             </div>
             <div class="block lg:hidden">
               <button
@@ -48,12 +48,12 @@
               <div
                 class="flex self-end mt-2 text-sm lg:flex-grow animated jackinthebox xl:mx-8"
               >
-                <!-- <a
-                  href="#whoami"
+                <a
+                  href="#home"
                   class="block p-1 mx-2 text-xl font-bold text-white rounded-lg lg:inline-block text-md sm:hover:border-green-300 hover:text-blue-900 focus:text-green-500 hover:bg-white"
                 >
-                whoami
-                </a> -->
+                  Home
+                </a>
                 <a
                   href="#home"
                   class="block p-1 mx-2 text-xl font-bold text-white rounded-lg lg:inline-block text-md sm:hover:border-green-300 hover:text-blue-900 focus:text-green-500 hover:bg-white"
@@ -82,7 +82,7 @@
         <div class="m-auto mt-24 md:mt-24 herologoimage">
           <img
             class="self-center w-3/4 h-auto m-auto sm:w-32 md:w-96"
-            src="./src/img/logo.png"
+            src="src/img/logo.png"
           />
           <h2
             class="flex flex-col items-center content-center mt-3 text-3xl font-bold text-white sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0 md:text-5xl text"
@@ -104,9 +104,9 @@
         </h3>
       </div>
       
-      <div class="mt-16 bg-pink-400">  
+      <div class="mt-16 ...">  
               <!-- POPUP VIDEO - STARTS HIDDEN  -->
-        <div id="popupVideo" class="z-50 overlay ">
+        <div id="popupVideo" class="z-50 overlay">
           <!-- Container -->
           <div class="relative p-2 mx-auto my-12 ease-in bg-white rounded-md popup w-max">
             <!-- Close Button -->
@@ -130,8 +130,8 @@
         <!-- FULL WIDTH IMAGE< CLICK TO OPEN POPUP -->
         <a href="#popupVideo" id="videoPopUp">
         <img
-          class="object-cover w-full h-96"
-          src="./src/img/coverVideo.jpg"
+          class="object-cover h-96 w-full ..."
+          src="src/img/coverVideo.jpg"
           alt=""
         />
       </a>
@@ -149,17 +149,17 @@
 
       <!-- ICONS -->
       <div class="flex flex-row flex-wrap justify-center flex-auto mt-8 space-x-4 md:space-x-16">
-          <img src="./src/img/python.svg" alt="python" srcset="">
-          <img src="./src/img/java.svg" alt="java" srcset="">
-          <img src="./src/img/nodejs.svg" alt="nodejs" srcset="">
-          <img src="./src/img/c++.svg" alt="c++" srcset="">
-          <img src="./src/img/android-os.svg" alt="android" srcset="">
+          <img src="src/img/python.svg" alt="python" srcset="">
+          <img src="src/img/java.svg" alt="java" srcset="">
+          <img src="src/img/nodejs.svg" alt="nodejs" srcset="">
+          <img src="src/img/c++.svg" alt="c++" srcset="">
+          <img src="src/img/android-os.svg" alt="android" srcset="">
         
       </div>
 
       <div class="mt-8">
         <a
-          href="https://github.com/memoriasIT"
+          href=""
           class="px-4 py-3 mr-6 font-bold text-white transition duration-300 ease-in-out border-2 border-white rounded hover:bg-white hover:text-black"
         >
           DISCOVER MORE PROJECTS
@@ -177,146 +177,72 @@
 
       <div class="mt-8 ">
         <div class="flex flex-col px-6 pt-4 ml-2 lg:grid lg:gap-8 2xl:gap-6 lg:grid-cols-3 2xl:row-span-2 2xl:pb-8">
-          <!-- Bobi -->
+          <!-- Beginning of the component about Daniel Clifford -->
           <div class="flex flex-wrap mb-5 bg-indigo-600 rounded-lg shadow-xl lg:mb-0">
             <div class="mx-6 my-8 2xl:mx-10">
-              <img class="m-auto rounded" src="https://raw.githubusercontent.com/memoriasIT/Bobi_app/main/docs/img/bobiArchitecture.png" />
+              <img class="m-auto rounded" src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
             </div>
             <div class="relative px-4 ">
-              <p class="text-xl font-bold text-left text-white capitalize 2xl:text-2xl lg:text-2xl lg:px-4 2xl:mx-2">Bobi: a solution for small businesses</p>
+              <p class="text-xl font-bold text-left text-white 2xl:text-xl lg:px-4 2xl:mx-2">Titulo de ejemplo</p>
               <div class="flex flex-row my-2">
-                <p class="pr-4 text-xs font-bold text-left text-white capitalize 2xl:text-l lg:px-4 2xl:mx-2">FLUTTER</p>
-                <p class="pr-4 text-xs font-bold text-left text-white capitalize 2xl:text-l lg:px-4 2xl:mx-2">JAVASCRIPT</p>
+                <p class="pr-4 text-xs font-bold text-left text-white uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">FLUTTER</p>
+                <p class="pr-4 text-xs font-bold text-left text-white uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">JAVASCRIPT</p>
               </div>
               
-              
-                <p class="mb-6 font-medium text-left text-white list-disc lg:px-4 text-opacity-80 md:text-sm 2xl:text-xl 2xl:mx-2"><span>Won 3rd place in a national IBM Developer Hackaton</span></p>
-                <ul class="mb-6 font-medium text-left text-white list-none md:list-disc text-opacity-70 lg:px-4 md:text-sm 2xl:text-lg 2xl:pb-8 2xl:mx-2">
-                  <li>
-                    Implemented a multiplatform mobile app with Flutter.
-                  </li>
-                  <li>
-                    Applied cloud microservices such as Cloud Foundry or Mongo DB Atlas.
-                  </li>
-                  <li>
-                    Utilized IBM Watson Assistant to create an AI conversational agent.
-                  </li>
-                  <li>
-                    Cloud Functions were employed to connect the app to the backend.
-                  </li>
-                </ul>
+              <p class="mb-6 font-medium text-left text-white text-opacity-50 md:text-sm 2xl:text-xl lg:px-4 2xl:pb-8 2xl:mx-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at felis sollicitudin, posuere lectus sit amet, blandit urna. Donec erat turpis, suscipit non aliquam nec, commodo rhoncus mi. Sed pulvinar magna metus, vel imperdiet eros sodales et. Fusce sed erat interdum, bibendum odio vitae, ultrices neque. </p>
             </div>
           </div>
-          <!-- Ending of Bobi -->
+          <!-- Ending of the component about Daniel Clifford -->
   
-          <!-- Beginning of Eventbook -->
+          <!-- Beginning of the component about Jonathan Walters -->
           <div class="pb-4 mb-5 bg-gray-900 rounded-lg shadow-xl lg:order-2 lg:row-span-1 2xl:row-span-1 lg:col-span-1 lg:mb-0">
             <div class="mx-6 my-8 2xl:mx-10">
-              <img class="m-auto rounded" src="https://raw.githubusercontent.com/majochaves/Eventbook/spring/src/main/resources/static/images/1.PNG" />
+              <img class="m-auto rounded" src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
             </div>
             <div class="relative px-4">
-              <p class="text-xl font-bold text-left text-white capitalize 2xl:text-2xl lg:text-2xl lg:px-4 2xl:mx-2">Eventbook: event management platform</p>
+              <p class="text-xl font-bold text-left text-white 2xl:text-xl lg:px-4 2xl:mx-2">Titulo de ejemplo</p>
               <div class="flex flex-row my-2">
-                <p class="pr-4 text-xs font-bold text-left text-white capitalize 2xl:text-l lg:px-4 2xl:mx-2">JAVA</p>
-                <p class="pr-4 text-xs font-bold text-left text-white capitalize 2xl:text-l lg:px-4 2xl:mx-2">SPRING BOOT</p>
+                <p class="pr-4 text-xs font-bold text-left text-white uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">FLUTTER</p>
+                <p class="pr-4 text-xs font-bold text-left text-white uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">JAVASCRIPT</p>
               </div>
               
-              <p class="mb-6 font-medium text-left text-white list-disc lg:px-4 text-opacity-80 md:text-sm 2xl:text-xl 2xl:mx-2"><span>Spring based event management platform with user and role management, technical support, statistics and more.</span></p>
-                <ul class="mb-6 font-medium text-left text-white list-none md:list-disc text-opacity-70 lg:px-4 md:text-sm 2xl:text-lg 2xl:pb-8 2xl:mx-2">
-                  <li>
-                    Used Spring Boot with Apache Derby to create a stand-alone application.
-                  </li>
-                  <li>
-                    Applied MVC patterns such as DAO, DTO and Service.
-                  </li>
-                  <li>
-                    Followed agile methodologies to work in teams.
-                  </li>
-                  <li>
-                    Used Selenium and JUnit to produce automated tests.
-                  </li>
-                  <li>
-                    Utilized AJAX to create real-time messaging between users.
-                  </li>
-                  <li>
-                    Designed CRUD for entities and managed the DB.
-                  </li>
-                </ul>
+              <p class="mb-6 font-medium text-left text-white text-opacity-50 md:text-sm 2xl:text-xl lg:px-4 2xl:pb-8 2xl:mx-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at felis sollicitudin, posuere lectus sit amet, blandit urna. Donec erat turpis, suscipit non aliquam nec, commodo rhoncus mi. Sed pulvinar magna metus, vel imperdiet eros sodales et. Fusce sed erat interdum, bibendum odio vitae, ultrices neque. </p>
             </div>
           </div>
-          <!-- Ending of Eventbook -->
+          <!-- Ending of the component about Jonathan Walters -->
   
-          <!-- Beginning of Aprende Ayudando -->
+          <!-- Beginning of the component about Patrick Abrams -->
           <div class="col-span-2 mb-5 bg-purple-800 rounded-lg shadow-xl lg:order-4 lg:row-span-2 2xl:row-span-1">
             <div class="cardHorizontal">
               <div class="mx-6 my-8 sm:w-full md:w-1/2 2xl:mx-10">
-                <img class="m-auto rounded" src="https://raw.githubusercontent.com/memoriasIT/AprendeAyudando/main/AprendeAyudando/AprendeAyudando/static/general/images/Screenshot%202021-09-21%20at%2019-08-22%20https%20aprendeayudando%20herokuapp%20com.png" />
+                <img class="m-auto rounded" src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
               </div>
               <div class="relative px-4 md:my-8">
-                <p class="text-xl font-bold text-left text-white capitalize 2xl:text-2xl lg:text-2xl lg:px-4 2xl:mx-2">Aprende Ayudando: e-learning platform for charities</p>
+                <p class="text-xl font-bold text-left text-white 2xl:text-xl lg:px-4 2xl:mx-2">Titulo de ejemplo</p>
                 <div class="flex flex-row my-2">
-                  <p class="pr-4 text-xs font-bold text-left text-white capitalize 2xl:text-l lg:px-4 2xl:mx-2">PYTHON</p>
-                  <p class="pr-4 text-xs font-bold text-left text-white capitalize 2xl:text-l lg:px-4 2xl:mx-2">DJANGO</p>
+                  <p class="pr-4 text-xs font-bold text-left text-white uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">FLUTTER</p>
+                  <p class="pr-4 text-xs font-bold text-left text-white uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">JAVASCRIPT</p>
                 </div>
                 
-                <p class="mb-6 font-medium text-left text-white list-disc lg:px-4 text-opacity-80 md:text-sm 2xl:text-xl 2xl:mx-2"><span>Django e-learning platform created for the university of - to collaborate with NGOs.</span></p>
-                <ul class="mb-6 font-medium text-left text-white list-none md:list-disc text-opacity-70 lg:px-4 md:text-sm 2xl:text-lg 2xl:pb-8 2xl:mx-2">
-                  <li>
-                    Negotiated with the client in order to produce a software requirements document.
-                  </li>
-                  <li>
-                    Produced the document in LaTeX and modelled the system in UML.
-                  </li>
-                  <li>
-                    Generated use cases accordingly and orchestrated with the team.
-                  </li>
-                  <li>
-                    Configured automatic deployment to the cloud with Heroku.
-                  </li>
-                  <li>
-                    Created CRUDs for several entities, managing permissions.
-                  </li>
-                  <li>
-                    Integrated a calendar to the Django administration panel for allowing an easy and role restricted CRUD of events.
-                  </li>
-                </ul>
+                <p class="mb-6 font-medium text-left text-white text-opacity-50 md:text-sm 2xl:text-xl lg:px-4 2xl:pb-8 2xl:mx-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at felis sollicitudin, posuere lectus sit amet, blandit urna. Donec erat turpis, suscipit non aliquam nec, commodo rhoncus mi. Sed pulvinar magna metus, vel imperdiet eros sodales et. Fusce sed erat interdum, bibendum odio vitae, ultrices neque. </p>
               </div>
             </div>
           </div>
-          <!-- Ending of Aprende Ayudando -->
+          <!-- Ending of the component about Patrick Abrams -->
   
           <!-- Beginning of the component about Kira Whittle -->
           <div class="mb-5 bg-white rounded-lg shadow-xl lg:order-2 lg:row-span-4 lg:col-span-1 lg:pb-4 2xl:h-screen">
             <div class="mx-6 my-8 2xl:mx-10">
-              <img class="m-auto rounded" src="https://i.imgur.com/S3sbJoP.png" />
+              <img class="m-auto rounded" src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
             </div>
             <div class="relative px-4 ">
-              <p class="text-xl font-bold text-left text-black capitalize 2xl:text-2xl lg:text-2xl lg:px-4 2xl:mx-2">Personal Landing Page</p>
-                <div class="flex flex-row my-2">
-                  <p class="pr-4 text-xs font-bold text-left text-black capitalize 2xl:text-l lg:px-4 2xl:mx-2">HTML</p>
-                  <p class="pr-4 text-xs font-bold text-left text-black capitalize 2xl:text-l lg:px-4 2xl:mx-2">TAILWIND CSS</p>
-                </div>
+              <p class="text-xl font-bold text-left text-black 2xl:text-xl lg:px-4 2xl:mx-2">Titulo de ejemplo</p>
+              <div class="flex flex-row my-2">
+                <p class="pr-4 text-xs font-bold text-left text-black uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">FLUTTER</p>
+                <p class="pr-4 text-xs font-bold text-left text-black uppercase 2xl:text-xl lg:px-4 2xl:pt-6 2xl:mx-2">JAVASCRIPT</p>
+              </div>
               
-                <p class="mb-6 font-medium text-left text-black list-disc lg:px-4 text-opacity-80 md:text-sm 2xl:text-xl 2xl:mx-2">
-                  <span>Personal website developed with TailwindCSS and Vite.js.</span>
-                </p>
-                <ul class="mb-6 font-medium text-left text-black list-none md:list-disc text-opacity-70 lg:px-4 md:text-sm 2xl:text-lg 2xl:pb-8 2xl:mx-2">
-                  <li>
-                    Used HTML with modern guidelines to create a responsive website working in all major browsers.
-                  </li>
-                  <li>
-                    Used TailwindCSS with ViteJS to generate a static site.
-                  </li>
-                  <li>
-                    Used PurgeCSS to generate static assets with smaller size, achieving faster loads.
-                  </li>
-                  <li>
-                    Used npm to manage packages and run the project.
-                  </li>
-                  <li>
-                    Deployed site to a static site hosting, in this case github pages and set up a domain for it.
-                  </li>
-                </ul>
+              <p class="mb-6 font-medium text-left text-black text-opacity-50 md:text-sm 2xl:text-xl lg:px-4 2xl:pb-8 2xl:mx-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at felis sollicitudin, posuere lectus sit amet, blandit urna. Donec erat turpis, suscipit non aliquam nec, commodo rhoncus mi. Sed pulvinar magna metus, vel imperdiet eros sodales et. Fusce sed erat interdum, bibendum odio vitae, ultrices neque. </p>
             </div>
           </div>
           <!-- Ending of the component about Kira Whittle -->
@@ -382,42 +308,39 @@
               
               
                 <!-- youtube -->
-                <a href="https://www.youtube.com/c/memoriasdeuninformatico">
-                  <symbol id="svg--youtube" viewbox="-150 -150 800 800">
-                    <path d="M459,61.2C443.7,56.1,349.35,51,255,51c-94.35,0-188.7,5.1-204,10.2C10.2,73.95,0,163.2,0,255s10.2,181.05,51,193.8
-                             C66.3,453.9,160.65,459,255,459c94.35,0,188.7-5.1,204-10.2c40.8-12.75,51-102,51-193.8S499.8,73.95,459,61.2z M204,369.75v-229.5
-                             L357,255L204,369.75z" />
-                  </symbol>
-                </a>
-                
+                <symbol id="svg--youtube" viewbox="-150 -150 800 800">
+                  <path d="M459,61.2C443.7,56.1,349.35,51,255,51c-94.35,0-188.7,5.1-204,10.2C10.2,73.95,0,163.2,0,255s10.2,181.05,51,193.8
+                           C66.3,453.9,160.65,459,255,459c94.35,0,188.7-5.1,204-10.2c40.8-12.75,51-102,51-193.8S499.8,73.95,459,61.2z M204,369.75v-229.5
+                           L357,255L204,369.75z" />
+                </symbol>
               </svg>
               
               
               
               <div class="z-40 logosContactMe">
                 <div>
-                  <a href="https://twitter.com/MemoriasIT" class="share twitter">
+                  <a href="" class="share twitter">
                     <svg role="presentation" class="svg--icon">
                       <use xlink:href="#svg--twitter" />
                     </svg>
                     <span class="clip">TWITTER</span>
                   </a>
                 
-                  <a href="https://www.facebook.com/memoriasDeUnIT/" class="share facebook">
+                  <a href="" class="share facebook">
                     <svg role="presentation" class="svg--icon">
                       <use xlink:href="#svg--facebook" />
                       <span class="clip">FACEBOOK</span>
                     </svg>
                   </a>
                 
-                  <a href="https://github.com/memoriasIT" class="share github">
+                  <a href="" class="share github">
                     <svg role="presentation" class="svg--icon">
                       <use xlink:href="#svg--github" />
                       <span class="clip">GITHUB</span>
                     </svg>
                   </a>
                 
-                  <a href="https://www.youtube.com/c/memoriasdeuninformatico" class="share youtube">
+                  <a href="" class="share youtube">
                     <svg role="presentation" class="svg--icon">
                       <use xlink:href="#svg--youtube" />
                       <span class="clip">YOUTUBE</span>
@@ -523,7 +446,7 @@
 
         <!-- Required Unicons (if you want) -->
         <div class="flex flex-row mt-2 md:flex-auto md:flex-row-reverse">
-          <a href="https://www.facebook.com/memoriasDeUnIT/" class="w-6 mx-1">
+          <a href="#" class="w-6 mx-1">
             <svg
               class="text-white fill-current"
               version="1.1"
@@ -550,7 +473,7 @@
           <!-- <a href="#" class="w-6 mx-1">
             <i class="uil uil-linkedin"></i>
           </a> -->
-          <a href="https://www.instagram.com/memoriasIT/" class="w-6 mx-1">
+          <a href="#" class="w-6 mx-1">
             <svg
             class="text-white fill-current"
               version="1.1"
@@ -597,7 +520,7 @@
               </g>
             </svg>
           </a>
-          <a href="https://twitter.com/MemoriasIT" class="w-6 mx-1">
+          <a href="#" class="w-6 mx-1">
             <svg
               class="text-white fill-current"
               version="1.1"
@@ -620,7 +543,7 @@
               />
             </svg>
           </a>
-          <a href="https://www.youtube.com/c/memoriasdeuninformatico" class="w-6 mx-1">
+          <a href="#" class="w-6 mx-1">
             <svg
               class="text-white fill-current"
               version="1.1"
@@ -649,9 +572,9 @@
     </div>
 
     <!-- Scripts -->
-    <script src="./src/index.js"></script>
-    <script src="./src/indexVideoPopUp.js"></script>
-    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/indexVideoPopUp.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
 
     <script>
       AOS.init();
