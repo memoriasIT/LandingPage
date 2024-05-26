@@ -3,37 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
-    /* Smooth scroll */
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-
-@keyframes scrollBad{
+@keyframes scrollBad {
   100% {
-    background-position:0px -3000px;
+    background-position: 0px -3000px;
   }
 }
-
-
 
 .animatedBackground {
   -webkit-animation: scrollBad 100s linear infinite;
   animation: scrollBad 100s linear infinite;
 }
 
-
 .bg-hero-pattern {
-  background-size: 2050px;  
+  background-size: 2050px;
 }
-
-
-
-
-
-
-
 
 .arrow {
   position: absolute;
@@ -76,12 +64,12 @@ html {
 .logosContactMe {
   margin-top: 40vw !important;
   margin-bottom: 10vw;
-	align-items: center;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
+  align-items: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -98,7 +86,6 @@ html {
   .logo b span {
     margin-right: 15px;
   }
-
 }
 
 .logo b {
@@ -121,7 +108,7 @@ html {
 .logo {
   text-align: center;
 
-    /* width: 30vh; */
+  /* width: 30vh; */
   height: 0vh;
   /* margin: auto; */
   position: relative;
@@ -132,7 +119,6 @@ html {
   user-select: none;
   max-width: 800px;
 }
-
 
 @keyframes blink {
   78% {
@@ -167,8 +153,6 @@ html {
   }
 }
 
-
-
 .youtube-video-container {
 }
 
@@ -179,13 +163,13 @@ html {
     overflow: hidden;
     width: 100%;
   }
-  
+
   .youtube-video-container::after {
     display: block;
     content: "";
     padding-top: 56.25%;
   }
-  
+
   .youtube-video-container iframe {
     position: absolute;
     top: 0;
@@ -194,23 +178,6 @@ html {
     height: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .overlay {
   position: fixed;
@@ -228,14 +195,13 @@ html {
   opacity: 1;
 }
 
-.overlay-oculto{
-  visibility:hidden !important; 
+.overlay-oculto {
+  visibility: hidden !important;
 }
 
-.overlay-visible{
-  visibility:visible !important; 
+.overlay-visible {
+  visibility: visible !important;
 }
-
 
 .popup .content {
   max-height: 30%;
@@ -248,26 +214,19 @@ html {
 
 .iframeVideoYoutube {
   width: 70vw;
-  height: calc(0.63*70vw);
+  height: calc(0.63 * 70vw);
   max-width: 780px;
-  max-height: calc(0.63*780px);
+  max-height: calc(0.63 * 780px);
 }
 
-
-
-@media screen and (max-width: 768px){
-  .box{
+@media screen and (max-width: 768px) {
+  .box {
     width: 70%;
   }
-  .popup{
+  .popup {
     width: 80%;
   }
 }
-
-
-
-
-
 
 /* SOCIAL MEDIA ICONS */
 .clip {
@@ -315,7 +274,8 @@ html {
 .share:last-child {
   margin-right: 0;
 }
-.share:hover, .share:focus {
+.share:hover,
+.share:focus {
   background: #f1f1f1;
   border-color: #333;
   border-radius: 15%;
@@ -324,27 +284,33 @@ html {
   outline-color: inherit;
 }
 
-.twitter:hover, .twitter:focus {
-  color: #00ACED;
+.twitter:hover,
+.twitter:focus {
+  color: #00aced;
 }
 
-.github:hover, .github:focus {
+.github:hover,
+.github:focus {
   color: #4183c4;
 }
 
-.youtube:hover, .youtube:focus {
+.youtube:hover,
+.youtube:focus {
   color: #cd201f;
 }
 
-.facebook:hover, .facebook:focus {
+.facebook:hover,
+.facebook:focus {
   color: #3b5998;
 }
 
-.stackoverflow:hover .svg--icon-st, .stackoverflow:focus .svg--icon-st {
-  fill: #F68A1F;
+.stackoverflow:hover .svg--icon-st,
+.stackoverflow:focus .svg--icon-st {
+  fill: #f68a1f;
 }
 
-.linkedin:hover, .linkedin:focus {
+.linkedin:hover,
+.linkedin:focus {
   color: #1d87be;
 }
 
@@ -352,20 +318,16 @@ html {
   stroke: #828282;
 }
 
-.rss:hover, .rss:focus {
-  color: #D95B29;
+.rss:hover,
+.rss:focus {
+  color: #d95b29;
 }
-
-
-
-
 
 .cardHorizontal {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
 }
-
 
 @media (min-width: 600px) {
   .cardHorizontal {

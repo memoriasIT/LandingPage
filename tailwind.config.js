@@ -1,8 +1,8 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./*.html']
-  },
+  mode: 'jit',
+  content: [
+    './*.html',
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -10,9 +10,6 @@ module.exports = {
         'hero-pattern': "url('/src/img/heroPattern.png')",
        })
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require('@tailwindcss/forms')],
 }
